@@ -11,7 +11,8 @@ public class IntegerToRoman {
         System.out.println(answer);
 
     }
-
+//here we are using linked hashmap as in linked hashmap order of insertion is maintained and and we need to print highest number first in roman system
+    //but there are some exception like 900,90,40,9,4 where we write small digit first .
     private String integertoroman(int num) {
         Map<String,Integer> map=new LinkedHashMap<>();
         map.put("M",1000);
