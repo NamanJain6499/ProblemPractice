@@ -1,7 +1,8 @@
 package InterviewBitPractice.LinkList;
 
 import java.util.Stack;
-
+//solution from
+//https://www.youtube.com/watch?v=WuVIpQZpZzo&t=431s
 public class PalindromeList {
     public static void main(String args[]){
         ListNode one = new ListNode(1);
