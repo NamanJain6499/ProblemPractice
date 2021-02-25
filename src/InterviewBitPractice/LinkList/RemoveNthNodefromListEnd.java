@@ -1,5 +1,6 @@
 package InterviewBitPractice.LinkList;
-
+//solution
+//https://www.youtube.com/watch?v=QNeRKXeil3Y&t=273s
 public class RemoveNthNodefromListEnd {
     public static void main(String args[]) {
         RemoveNthNodefromListEnd delete = new RemoveNthNodefromListEnd();
