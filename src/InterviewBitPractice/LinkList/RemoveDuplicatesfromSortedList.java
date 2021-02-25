@@ -17,7 +17,7 @@ public class RemoveDuplicatesfromSortedList {
         five.next=six;
         six.next=seven;
         ListNode answer=list.deleteDuplicates(one);
-        System.out.println(answer.val);
+        System.out.println(answer.next.val);
     }
 
     private ListNode deleteDuplicates(ListNode head) {
@@ -26,11 +26,11 @@ public class RemoveDuplicatesfromSortedList {
             if (temp.val== temp.next.val){
                 temp.next=temp.next.next;
             }
-            else {x`
+            else {
                 temp=temp.next;
             }
         }
-        return head;
+        return head ;
     }
 
 
