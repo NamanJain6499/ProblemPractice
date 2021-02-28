@@ -19,7 +19,7 @@ public class MergeTwoSortedList {
         System.out.println(answer.val);
     }
 
-    private ListNode deleteDuplicates(ListNode one, ListNode four) {
+    ListNode deleteDuplicates(ListNode one, ListNode four) {
         ListNode dummy=new ListNode(0);
         ListNode head=dummy;
         while (one!=null &&four!=null){
