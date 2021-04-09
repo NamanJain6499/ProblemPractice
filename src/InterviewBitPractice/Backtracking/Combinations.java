@@ -5,8 +5,8 @@ import java.util.ArrayList;
 public class Combinations {
     public static void main(String args[]) {
         Combinations combinations = new Combinations();
-        int n = 4;
-        int k = 2;
+        int n = 5;
+        int k = 3;
         ArrayList<ArrayList<Integer>> answer = combinations.combine(n, k);
         System.out.println(answer);
     }
@@ -29,7 +29,8 @@ public class Combinations {
         if (list.size() == k) {     //when the size of list is equal to kwe add list to result and return to the last makeCOmbination
                                    // function and remove the list.size()-1 th element
             result.add(new ArrayList<Integer>(list));
-            return;
+            return;               //if list.size()==k then this redirect back to line no. 39 and then next line occurremoving
+                                 // last element which is simply Backtracking
         }
 
         for (int i = start; i <= n; i++) {
