@@ -20,18 +20,31 @@ public class PalindromePartitioning {
     }
 
     private void backtrack(String s, ArrayList<String> list, ArrayList<ArrayList<String>> result) {
-        for (int i = 1; i < s.length(); i++) {
-            String left = s.substring(0, i);
-            String right = s.substring(i);
+        if (s.length()==0){
+            result.add(new ArrayList<String>(list));
+            return;
+        }
+        for (int i = 0; i < s.length(); i++) {
+            String left = s.substring(0, i+1);
+            String right = s.substring(i+1);
             if (isPalindrome(left)) {
-                ArrayList<String> copylist = new ArrayList<>(list);
-                copylist.add(left);
-                backtrack(right,copylist,result);
+                list.add(left);
+                backtrack(right,list,result);
+                list.remove(list.size()-1);
             }
         }
     }
 
     private boolean isPalindrome(String left) {
+        int i=0;
+        int j=left.length()-1;
+        while (i<=j){
+            if (left.charAt(i)!=left.charAt(j)){
+                return false;
+            }
+            i++;
+            j--;
+        }
         return true;
     }
 }
