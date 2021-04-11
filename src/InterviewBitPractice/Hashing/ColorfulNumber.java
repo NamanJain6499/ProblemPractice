@@ -10,6 +10,8 @@ public class ColorfulNumber {
         System.out.println(answer);
     }
 
+    //solution
+    //https://www.careercup.com/question?id=4863869499473920
     private int colorful(int A) {
         if (A < 10) {
             return 1;
