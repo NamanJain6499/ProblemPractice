@@ -20,7 +20,7 @@ public class ColorfulNumber {
         int len = colorString.length();
         HashMap<String, Integer> colormap = new HashMap<>();
         for (int i = 1; i <= len; i++) {
-            //As we want contingous substring hence here i represent length of substring and
+            //As we want contingous substring hence here i represent length of substring andwe take substring from jto j+i
             for (int j = 0; i + j <= len; j++) {
                 String sub = colorString.substring(j, j + i);
                 int product = getProduct(Integer.parseInt(sub));
