@@ -17,7 +17,7 @@ public class ValidBstfromPreorder {
         }
         System.out.println((int) solve(A));
     }
-
+//we take first input of arraylist and find first number in A greater than input and check that all element on the rightof that should be greater than input
     private static int solve(ArrayList<Integer> A) {
         Stack<Integer> stack=new Stack<>();
         int root=Integer.MIN_VALUE;
