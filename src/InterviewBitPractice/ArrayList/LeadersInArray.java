@@ -2,7 +2,8 @@ package InterviewBitPractice.ArrayList;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-
+//solution
+//https://www.youtube.com/watch?v=SnU0xiQ_jJ0
 public class LeadersInArray {
     public static void main(String args[]){
         LeadersInArray leader=new LeadersInArray();
