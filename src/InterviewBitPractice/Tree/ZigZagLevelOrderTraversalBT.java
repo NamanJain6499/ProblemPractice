@@ -6,6 +6,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 //solution
 //https://www.youtube.com/watch?v=YBw5JRZK9_g
+//for further learning check this https://www.youtube.com/watch?v=smjr2ow6oKc
 public class ZigZagLevelOrderTraversalBT {
     public static void main(String args[]) {
         ZigZagLevelOrderTraversalBT zigZagLevelOrderTraversalBT = new ZigZagLevelOrderTraversalBT();
