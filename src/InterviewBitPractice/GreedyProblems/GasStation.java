@@ -1,7 +1,8 @@
 package InterviewBitPractice.GreedyProblems;
 
 import java.util.ArrayList;
-
+//solution
+//https://www.youtube.com/watch?v=xWgbFI_rXJs&t=455s
 public class GasStation {
     public static void main(String[] args) {
         GasStation gasStation = new GasStation();
