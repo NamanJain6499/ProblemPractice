@@ -21,7 +21,7 @@ public class DistributeCandy {
         int count = 0;
         int[] L2R = new int[A.size()];
         int[] R2L = new int[A.size()];
-        //how to initialize array with 1 so each get atleast one candy.
+        //how to initialize array with 1 so each get atleast 1 candy.
         Arrays.fill(L2R, 1);
         Arrays.fill(R2L, 1);
         for (int i = 1; i < A.size(); i++) {
