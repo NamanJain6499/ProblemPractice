@@ -1,4 +1,4 @@
-package InterviewBitPractice.Tree;
+package InterviewBitPractice.DynamicProgramming;
 
 public class TreeNode {
     int val;
