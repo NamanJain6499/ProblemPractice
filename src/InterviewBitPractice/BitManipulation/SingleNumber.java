@@ -14,6 +14,7 @@ public class SingleNumber {
         A.add(1);
         int answer=singleNumber.solve(A);
         System.out.println(answer);
+
     }
 
     private int solve(ArrayList<Integer> A) {
