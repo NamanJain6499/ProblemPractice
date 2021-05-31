@@ -23,12 +23,6 @@ public class LongestPalindromicSubsequence {
         int m=B.length();
         int [][]dp=new int[n+1][m+1];
 
-        for(int i=0;i<=n;i++){
-            dp[0][i]=0;
-        }
-        for(int i=0;i<=m;i++){
-            dp[i][0]=0;
-        }
         for(int i=1;i<=n;i++){
             for(int j=1;j<=m;j++){
                 if(A.charAt(i-1)==B.charAt(j-1)){
