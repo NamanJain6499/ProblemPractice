@@ -6,30 +6,30 @@ public class RemoveDuplicatesFromSortedArray {
     public static void main(String[] args) {
         RemoveDuplicatesFromSortedArray remove=new RemoveDuplicatesFromSortedArray();
         ArrayList<Integer> A=new ArrayList<>();
-        A.add(1);
-        A.add(1);
-        A.add(5);
-        A.add(5);
-        A.add(8);
+      A.add(5000);
+      A.add(5000);
+      A.add(5000);
+
         int answer=remove.removeDuplicates(A);
         System.out.println(answer);
     }
 
     private int removeDuplicates(ArrayList<Integer> a) {
-        int p1=0,p2=1;
-        while(p2<a.size())
-        {
-            if(a.get(p1) == (a.get(p2)))
-            {
-                a.remove(p2);
-            }
-            else
-            {
-                p1++;
-                p2++;
+        int i=0;
+        int j=1;
+        if(a.size()==0||a.size()==1){
+            return a.size();
+        }
+        for (i=0;i<a.size();i++){
+            if (a.get(i).equals(a.get(j))){
+                a.remove(j);
+            }else{
+                i++;
+                j++;
             }
 
         }
+        System.out.println(a);
         return a.size();
     }
 }
