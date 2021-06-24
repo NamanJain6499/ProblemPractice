@@ -4,8 +4,8 @@ import java.util.HashMap;
 
 public class CountAnagram {
     public static void main(String[] args) {
-        String txt = "forxxorfxdofr";
-        String pat = "for";
+        String txt = "aabaabaa";
+        String pat = "aaba";
         System.out.println(search(pat, txt));
     }
 
@@ -45,7 +45,7 @@ public class CountAnagram {
                 }
                 if (map.containsKey(txt.charAt(i))) {
                     map.put(txt.charAt(i), map.get(txt.charAt(i)) + 1);
-                    if (map.get(txt.charAt(i)) > 0) {
+                    if (map.get(txt.charAt(i)) == 1) {
                         count++;
                     }
                 }
