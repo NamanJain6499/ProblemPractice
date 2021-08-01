@@ -7,7 +7,7 @@ public class LongestCommonPrefix {
         ArrayList<String> A=new ArrayList<>();
         A.add("abcd");
         A.add("abcd");
-        A.add("efgh");
+        A.add("abfgh");
         LongestCommonPrefix prefix=new LongestCommonPrefix();
         String common=prefix.longestCommonPrefix(A);
         System.out.println(common);
